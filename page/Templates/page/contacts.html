@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="Start your development with Meyawo landing page.">
+   <meta name="author" content="Devcrud">
+   <title>DEBOWALE OLAT | Contact Me</title>
+   <!-- font icons -->
+   <link rel="stylesheet" href="{% static 'page/assets/vendors/themify-icons/css/themify-icons.css' %}">
+   <!-- Bootstrap + Steller  -->
+   <link rel="stylesheet" href="{% static 'page/assets/css/meyawo.css' %}">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">DEBOWALE OLAT</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <div class="container text-center">
+        <p class="section-subtitle">How can you communicate?</p>
+        <h2 class="section-title mb-5">Contact Me</h2>
+        <!-- contact form -->
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+        <!-- end of contact form -->
+    </div><!-- end of container -->
+
+</body>
+
+</html>
