@@ -23,7 +23,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =False
 
-ALLOWED_HOSTS = ['debowaleolat.com', "llanding-production-6a52.up.railway.app"]
+ALLOWED_HOSTS = ['debowaleolat.com', "llanding-production-6a52.up.railway.app", "127.0.0.1"]
 
 
 # Application definition
