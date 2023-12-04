@@ -70,6 +70,8 @@ TEMPLATES = [
     },
 ]
 
+TEMPLATE_DIRS = ( os.path.join(BASE_DIR), )
+
 WSGI_APPLICATION = 'CV.wsgi.application'
 
 
