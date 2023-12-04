@@ -60,12 +60,28 @@
         </div>
         </div>
     </header> 
-    <div class="container text-center">
+
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle"></p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Submit</button>
+            </form>
+            <!-- end of contact form -->
+        </div><!-- end of container -->
+    </section>
+
+
+    <!-- <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Submit</button>
-    </form></div>
+    </form></div> -->
 
     <br>
     <br>
@@ -77,8 +93,7 @@
         <footer class="footer">
             <p class="mb-0">Copyright
                 <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="http://www.devcrud.com">DevCRUD</a> Distribution <a
-                    href="https://themewagon.com">ThemeWagon</a>
+                    href="{%url 'home' %}">DEBOWALE OLAT</a> ENTERPRISE 
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
                 <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
