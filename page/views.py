@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 
 def landing(request):
-    return render(request, 'page/index.html')
+    return render(request, 'index.html')
 
 
 def contactpage(request):
@@ -18,4 +18,4 @@ def contactpage(request):
             return HttpResponse("Message sent successfully")
     else:
         form = ContactForm()
-    return render(request, 'page/contact.html', {'form': form})
+    return render(request, 'contact.html', {'form': form})
