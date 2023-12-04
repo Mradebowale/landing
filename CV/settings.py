@@ -25,6 +25,7 @@ DEBUG =True
 
 ALLOWED_HOSTS = ['debowaleolat.com', "landingpa.up.railway.app", "127.0.0.1"]
 
+CSRF_TRUSTED_ORIGINS = ['https://landingpa.up.railway.app','https://127.0.0.1']
 
 # Application definition
 
