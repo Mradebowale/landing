@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-TEMPLATE_DIRS = os.path.join(BASE_DIR, 'Templates')
+TEMPLATE_DIRS = os.path.join(BASE_DIR, 'templates')
 
 WSGI_APPLICATION = 'CV.wsgi.application'
 
